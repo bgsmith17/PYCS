@@ -9,9 +9,9 @@ Jonathan M. Vance
 **Installation**
 Instructions on how to set up the project locally:
 
-git clone https://github.com/yourgithubusername/project-repo-name.git
+git clone https://github.com/abhi1701/biomass-yield-forecasting.git
 
-cd project-repo-name
+cd biomass-yield-forecasting
 
 pip install -r requirements.txt
 
