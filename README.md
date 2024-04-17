@@ -10,6 +10,8 @@ Jonathan M. Vance
 Instructions on how to set up the project locally:
 
 git clone https://github.com/yourgithubusername/project-repo-name.git
+
 cd project-repo-name
+
 pip install -r requirements.txt
 
