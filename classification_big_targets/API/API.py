@@ -12,7 +12,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib
-from sklearn.metrics import plot_confusion_matrix
+from sklearn.metrics import ConfusionMatrixDisplay
 
 ## machine learning stuff
 # preprocessing
@@ -924,7 +924,7 @@ def saveMLResults(xTest, yTest, N, xDf, yDf, modelList, workingDir, numFeatures,
 #         xgb_accuracy = actualTest(xBoost, yBoost, xTest, yTest, xgb_model, bestModel.best_params_)
         xgb_accuracy = actualTest(xTest, yTest, xgb_model, bestModel.best_params_)
         #fig=plot_confusion_matrix(bestModel, xTest, yTest)
-        fig = plot_confusion_matrix(xgb_model, xTest, yTest)
+        fig = ConfusionMatrixDisplay.from_estimator(bestModel, xTest, yTest)
         #fig.figure_.suptitle("Confusion Matrix for  " + str(model))
         plt.show()
         
